@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;500&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #F0F8FF;
+    font-family: 'Roboto', sans-serif;
+    height: 100vh;
+}
+
+.container {
+    background-color: #ffffff;
+    margin: 40px 25px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    color: hsl(214, 17%, 51%);
+    -webkit-box-shadow: 0px 3px 27px -9px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 3px 27px -9px rgba(0,0,0,0.75);
+    box-shadow: 0px 3px 27px -9px rgba(0,0,0,0.75);
+}
+
+.right h1 {
+    font-size: 1.5rem;
+    font-weight: 900;
+    padding: 0 15px;
+    color: hsl(217, 19%, 35%);
+    letter-spacing: 1px;
+}
+
+.right p {
+    font-size: 1.1rem;
+    margin-top: 10px;
+    padding: 0 15px;
+    font-weight: 300;
+}
+
+#drawer {
+    max-width: 100%;
+    max-height: 100%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    margin-bottom: 30px;
+}
+
+.bottom {
+    position: relative;
+    display: flex; 
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 10px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    padding: 10px 10px;
+}
+
+.bottom h1 {
+    font-size: 1.2rem;
+    font-weight: 300;
+}
+
+#michelle {
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+}
+
+#share {
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    background-color: #F0F8FF;
+}
+
+.bottom2 {
+    background-color: hsl(217, 19%, 35%);
+    border-radius: 5px;
+    position: absolute;
+    width: 125px;
+    height: 40px;
+    bottom: 80px;
+    right: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.bottom h1 {
+    flex: 1;
+}
+
+.bottom2 li {
+    list-style-type: none;
+}
+
+#show {
+    display: none;
+}
+
+@media only screen and (min-width: 768px) {
+    .wrapper {
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .container {
+        display: flex;
+        flex-direction: row;
+        margin: 0 200px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #drawer {
+        max-width: 400px;
+        border-top-right-radius: 0;
+        border-bottom-left-radius: 20px;
+
+    }
+
+    .bottom {
+        justify-content: space-evenly;
+    }
+
+    .bottom h1 {
+        flex: 1;
+    }
+}

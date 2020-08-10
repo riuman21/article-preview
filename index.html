@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  
+  <title>Frontend Mentor | Article preview component</title>
+</head>
+<body>
+  <div class="wrapper">
+    <div class="container">
+      <img id="drawer" src="images/drawers.jpg" alt="drawer-img">
+      <div class="right">
+        <h1>
+          Shift the overall look and feel by adding these wonderful 
+          touches to furniture in your home
+        </h1>
+        <p>
+          Ever been in a room and felt like something was missing? Perhaps 
+          it felt slightly bare and uninviting. I’ve got some simple tips 
+          to help you make any room feel complete.
+        </p>
+        <div class="bottom">
+          <img id="michelle" src="images/avatar-michelle.jpg" alt="michelle">
+          <h1>
+            Michelle Appleton
+          </h1>
+          <img onclick="visible()" id="share" src="images/icon-share.svg" alt="share">
+          <div id="show" class="bottom2">
+            <li><img src="images/icon-facebook.svg" alt="facebook"></li>
+            <li><img src="images/icon-pinterest.svg" alt="pinterest"></li>
+            <li><img src="images/icon-twitter.svg" alt="twitter"></li>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script>
+    function visible() {
+      let x = document.getElementById("show");
+      if (x.style.display === "none") {
+        x.style.display = "flex";
+      } else {
+        x.style.display = "none";
+      }
+    }
+  </script>
+</body>
+</html>
